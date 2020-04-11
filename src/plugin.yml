@@ -1,0 +1,53 @@
+name: MultiHomes
+version: 4.0.0
+description: Easy to use homeplugin.
+load: POSTWORLD
+author: Maxi
+main: de.maxi.multihomes.Main
+
+
+commands:
+  home:
+    description: Home-Command
+    aliases: mh
+    usage: /<command> help
+    permission: multihomes.command
+
+permissions:
+  multihomes.*:
+    description: All Permissions in one
+    default: op
+    children:
+      multihomes.command: true
+      multihomes.help: true
+      multihomes.list: true
+      multihomes.tp: true
+      multihomes.set: true
+      multihomes.delete: true
+      multihomes.relocate: true
+      multihomes.default: true
+
+  multihomes.command:
+    description: Access to the /home command
+    default: true
+  multihomes.help:
+    description: See the help page.
+    default: true
+  multihomes.list:
+    description: See a list of all homes
+    default: true
+  multihomes.tp:
+    description: Teleport to a home
+    default: true
+  multihomes.set:
+    description: Set a home
+    default: true
+  multihomes.delete:
+    description: Delete a home
+    default: true
+  multihomes.relocate:
+    description: Relocate a home
+    default: true
+  multihomes.default:
+    description: Set and teleport to a default home
+    default: true

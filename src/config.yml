@@ -1,0 +1,46 @@
+# +---------------------------------------------------------------------------------------------+
+# |                                   Config for MultiHomes                                     |
+# +---------------------------------------------------------------------------------------------+
+# |                                                                                             |
+# |   Here you find the configuration for MultiHomes                                            |
+# |                                                                                             |
+# |                                                                                             |
+# +---------------------------------------------------------------------------------------------+
+
+# Select the langfile here
+lang: "en"
+
+# Set the default settings for home command:
+  # default homename:
+default-homename: "home"
+
+# Here you can select worlds in which the user is not allowed to set a home
+restricted-worlds:
+  - "exampleworld"
+  - "anotherworld"
+
+# Here you can restrict some words as homenames:
+restricted-homenames:
+  - "example-homename"
+  - "another-homename"
+
+# Possible methods are: SQLite (default), MySQL
+save-method: "SQLite"
+
+# In case of a MySQL setup you have to configure this settings
+mysql:
+  # set your host ip
+  host: "localhost"
+  # set your port (default of MySQL is 3306)
+  port: 3306
+  # select the database (must be created in the first place)
+  database: "multihomes"
+  # set the database user
+  username: "root"
+  # set the password
+  password: "minecraft"
+
+# #####################
+# # DO NOT TOUCH THIS #
+# #####################
+version: 4

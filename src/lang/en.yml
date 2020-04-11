@@ -1,0 +1,55 @@
+# +---------------------------------------------------------------------------------------------+
+# |                                   Messages for MultiHomes                                   |
+# +---------------------------------------------------------------------------------------------+
+# |                                                                                             |
+# |   If you want individuall messages it is recommended to duplicate this file and rename it.  |
+# |   To use your own file just tell in the config.yml which name your file has                 |
+# |                                                                                             |
+# +---------------------------------------------------------------------------------------------+
+
+# Common Error-messages:
+noPermission: "§8§l[§3MultiHomes§8§l] §cSorry but you have §4no permission §cto perform this command!"
+justPlayer: "§8§l[§3MultiHomes§8§l] §cJust players are allowed to execute this command!"
+unknownCommand: "§8§l[§3MultiHomes§8§l] §7Unkown subcommand. §3Try: /home help"
+internal-error: §8§l[§3MultiHomes§8§l] §cAn §4unexpected error §cocurred. §7Please call an Administartor!
+
+# Update-messages - for the update functionality [Placeholders: %name%, %type%, %link%]:
+update:
+  available: '§8§l[§3MultiHomes§8§l] §eAn update is available: §f%name%, a %type%, available at %link%'
+  notavailable: '§8§l[§3MultiHomes§8§l] §eThere is no new update!'
+  confirm: §8§l[§3MultiHomes§8§l] §eType §3/home update confirm §eif you would like to automatically update.
+  success: §8§l[§3MultiHomes§8§l] §eDownloading... Restart your server to activate the new version of Main!
+
+# Messages for the home command [Placeholder: %homename%, %amount%]:
+# Elemental:
+home:
+  teleport: "§8§l[§3MultiHomes§8§l] §aTeleportet to §2%home%§a!"
+  create: "§8§l[§3MultiHomes§8§l] §aHome §2%home% §acreated!"
+  isSet: "§8§l[§3MultiHomes§8§l] §cThe Home §7%home% §calready exists!"
+  delete: "§8§l[§3MultiHomes§8§l] §aHome §2%home% §adeleted!"
+  relocate: "§8§l[§3MultiHomes§8§l] §aHome §2%home% §ais relocated to your location!"
+  default: "§8§l[§3MultiHomes§8§l] §aHome §2%home% §ais now your default home!"
+  NA: "§8§l[§3MultiHomes§8§l] §cThe home §7%home% §cdoes not exists!"
+
+list: "§8§l[§3MultiHomes§8§l] §7You have §a%amount% §7homes: §e%homes%"
+
+  # Help-page:
+help:
+  - '+--------------------'
+  - '| §eHelp-Site for the §6/home §ecommand'
+  - '| §7Alternativ: §6/mh'
+  - '+--------------------'
+  - '| §6/home §eTeleport to or create the default home'
+  - '| §6/home <homename> §eTeleport to the specified home!'
+  - '| §6/home list §eList all your homes'
+  - '| §6/home help §eShow this help page'
+  - '| §6/home set <homename> §eCreates a new home named <homename>'
+  - '| §6/home del|delete <homename> §eDeletes the specified home'
+  - '| §6/home edit <homename> default §eSet the default home to <homename>'
+  - '| §6/home edit <homename> replace §eReplace <homename> to your current location'
+  - '+--------------------'
+
+sql:
+  connect: "[MultiHomes] Successfully connected to database!"
+  error: "[MultiHomes] Could not connect to database!"
+  disconnect: "[MultiHomes] Successfully disconnected from database!"
